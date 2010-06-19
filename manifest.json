@@ -2,7 +2,7 @@
   "name": "Clean DCP",
   "version": "0.0.1",
   "update_url": "http://jaymendoza.net/clean-dcp/updates.xml",
-  "options_page": "options.html"
+  "options_page": "options.html",
 
   "content_scripts": [
     {
