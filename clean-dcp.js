@@ -1,26 +1,15 @@
-// ==UserScript==
-// @name           Clean DCP
-// @namespace      http://jaymendoza.net
-// @include        http://*.drumcorpsplanet.com/forums/*
-// ==/UserScript==
-
-$(function() {
+$( function() {
 
     // Banner ad
-    $('table:first').remove();
-
-    // Logos
-    $('div#logostrip')
-        .parent('div.borderwrap')
-        .remove();
+//    $('table:first').remove();
 
     // Navigation
-    $('div#logostrip')
-        .parent('div.borderwrap')
-        .remove();
+//    $('div#logostrip')
+  //      .parent('div.borderwrap')
+    //    .remove();
 
     // Quick Links bar
-    $('div#userlinks').remove();
+    //$('div#userlinks').remove();
 
     // Google ads
     $('p > ins').remove();
@@ -29,11 +18,11 @@ $(function() {
     $('div#navstrip').css({'margin': '0', 'padding': '0'});
 
     // Subforum listing
-    $('div#fo_3')
+    $('div.borderwrap#fo_3')
         .insertAfter('div.borderwrap:last')
         .before('<br />');
 
-    $('div#fc_3')
+    $('div.borderwrap#fc_3')
         .insertAfter('div.borderwrap:last')
         .before('<br />');
 
@@ -60,10 +49,10 @@ $(function() {
         .css({'color': '#888'});
 
     // Thread icons
-    $('th:contains("Topic Title")')
+    $('table.ipbtable tr:first-child > th:contains("Topic Title")')
         .prev().remove();
 
-    $('td')
+    $('table.ipbtable tr > td.row1:first-child')
         .filter(function() { return this.id.match(/tid-folder-\d+/); })
         .next().remove();
 

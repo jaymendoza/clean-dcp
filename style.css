@@ -1,0 +1,19 @@
+body > table:first-child {
+   display: none;
+}
+
+div#userlinks:first-of-type {
+   display: none;
+}
+
+div#submenu {
+   display: none;
+}
+
+script ~ div.borderwrap {
+   border: none;
+}
+
+table ~ div.borderwrap {
+   border: 1px solid #072a66;
+}

@@ -3,11 +3,19 @@
   "version": "0.0.1",
   "update_url": "http://jaymendoza.net/clean-dcp/updates.xml",
   "options_page": "options.html",
+  "permissions": ["tabs", "http://*/*"],
 
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "default_title": "Clean DCP"
+  },
+  
+  "run_at": "document_start",
   "content_scripts": [
     {
       "matches": ["http://www.drumcorpsplanet.com/forums/*"],
-      "js": ["jquery.js", "clean-dcp.js"]
+      "js": ["jquery.js", "clean-dcp.js"],
+      "css": ["style.css"]
     }
   ]
 }
