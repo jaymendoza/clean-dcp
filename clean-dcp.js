@@ -1,18 +1,4 @@
-$( function() {
-
-    // Banner ad
-//    $('table:first').remove();
-
-    // Navigation
-//    $('div#logostrip')
-  //      .parent('div.borderwrap')
-    //    .remove();
-
-    // Quick Links bar
-    //$('div#userlinks').remove();
-
-    // Google ads
-    //$('p > ins').remove();
+$(function() {
 
     // Navigation
     $('div#navstrip').css({'margin': '0', 'padding': '0'});
@@ -47,14 +33,6 @@ $( function() {
     $('div.desc > span')
         .filter(function() { return this.id.match(/tid-desc-\d+/); })
         .css({'color': '#888'});
-
-    // Thread icons
-    //$('table.ipbtable tr:first-child > th:contains("Topic Title")')
-        //.prev().remove();
-
-    //$('table.ipbtable tr > td.row1:first-child')
-      //  .filter(function() { return this.id.match(/tid-folder-\d+/); })
-        //.next().remove();
 
     // Line breaks
     $('script[src="jscripts/ipb_forum.js"]').next('br').remove();
