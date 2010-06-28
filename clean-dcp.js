@@ -12,7 +12,7 @@ $( function() {
     //$('div#userlinks').remove();
 
     // Google ads
-    $('p > ins').remove();
+    //$('p > ins').remove();
 
     // Navigation
     $('div#navstrip').css({'margin': '0', 'padding': '0'});
@@ -34,14 +34,14 @@ $( function() {
         .parents('tr').remove();
 
     // Pinned topics
-    $('td.row1').children('div:contains("Important:")')
-        .parents('tr').remove();
+    //$('td.row1').children('div:contains("Important:")')
+      //  .parents('tr').remove();
 
     // Topic title
-    $('td.row1 > div a')
-        .filter(function() { return this.id.match(/tid-link-\d+/); })
-        .css({'text-decoration': 'none',
-              'font-size': '12px'});
+    //$('td.row1 > div a')
+      //  .filter(function() { return this.id.match(/tid-link-\d+/); })
+        //.css({'text-decoration': 'none',
+          //    'font-size': '12px'});
 
     // Topic subtitle
     $('div.desc > span')
