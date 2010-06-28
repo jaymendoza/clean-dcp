@@ -49,12 +49,12 @@ $( function() {
         .css({'color': '#888'});
 
     // Thread icons
-    $('table.ipbtable tr:first-child > th:contains("Topic Title")')
-        .prev().remove();
+    //$('table.ipbtable tr:first-child > th:contains("Topic Title")')
+        //.prev().remove();
 
-    $('table.ipbtable tr > td.row1:first-child')
-        .filter(function() { return this.id.match(/tid-folder-\d+/); })
-        .next().remove();
+    //$('table.ipbtable tr > td.row1:first-child')
+      //  .filter(function() { return this.id.match(/tid-folder-\d+/); })
+        //.next().remove();
 
     // Line breaks
     $('script[src="jscripts/ipb_forum.js"]').next('br').remove();

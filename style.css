@@ -20,6 +20,17 @@ div.borderwrap#fc_3 {
    border: 1px solid #072a66;
 }
 
+/* google ads */
 div#navstrip ~ p {
    display: none;
 }
+
+/* topic icons */
+tbody tr > th:nth-of-type(2) {
+   display: none;
+}
+
+tbody tr > td:nth-of-type(2) {
+   display: none;
+}
+
