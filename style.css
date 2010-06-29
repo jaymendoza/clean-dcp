@@ -1,11 +1,14 @@
+/* banner ad */
 body > table:first-child {
    display: none;
 }
 
+/* quick links */
 div#userlinks:first-of-type {
    display: none;
 }
 
+/* navigation */
 div#submenu {
    display: none;
 }
@@ -14,9 +17,7 @@ script ~ div.borderwrap {
    border: none;
 }
 
-table ~ div.borderwrap,
-div.borderwrap#fo_3,
-div.borderwrap#fc_3 {
+table ~ div.borderwrap {
    border: 1px solid #072a66;
 }
 
@@ -25,7 +26,13 @@ div#navstrip ~ p {
    display: none;
 }
 
-/* topic icons */
+/* subforum listing */
+div.borderwrap#fo_3,
+div.borderwrap#fc_3 {
+   display: none;
+}
+
+/* topic icon */
 tbody tr > th:nth-of-type(2) {
    display: none;
 }
@@ -34,3 +41,11 @@ tbody tr > td:nth-of-type(2) {
    display: none;
 }
 
+/* topic link */
+td.row1 > div a[id^="tid-link-"] {
+   text-decoration: none;
+}
+
+script ~ br { 
+   display: none;
+}
