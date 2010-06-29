@@ -33,18 +33,19 @@ div.borderwrap#fc_3 {
 }
 
 /* topic icon */
-tbody tr > th:nth-of-type(2) {
+table.ipbtable tr > th:nth-of-type(2) {
    display: none;
 }
 
-tbody tr > td:nth-of-type(2) {
+table.ipbtable tr > td:nth-of-type(2) {
    display: none;
 }
 
 /* topic link */
-td.row1 > div a[id^="tid-link-"] {
+/*td.row1 > div a[id^="tid-link-"] {
    text-decoration: none;
 }
+*/
 
 script ~ br { 
    display: none;
