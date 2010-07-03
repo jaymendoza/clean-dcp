@@ -10,23 +10,4 @@ $(function() {
     // Pinned topics
     $('td.row1').children('div:contains("Important:")')
         .parents('tr').remove();
-
-    // All topics
-    $('td.row1 > div > span > a')
-        .filter(function() { return this.id.match(/tid-link-\d+/); })
-      .css('text-decoration', 'none');
-
-    // Unread topics
-/*    $('td.row1 > div > a > img')
-        .filter(function() { return this.src.match(/newpost/); })
-           .hide()
-        .parent('a').next('span').children('a')
-           .css('color', '#000');
-*/
-
-    // Topic subtitle
-    $('div.desc > span')
-        .filter(function() { return this.id.match(/tid-desc-\d+/); })
-          .css({'color': '#888'});
-
 });

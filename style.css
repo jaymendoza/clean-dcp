@@ -32,10 +32,14 @@ table.ipbtable tr > td:nth-of-type(2) {
 }
 
 /* topic link */
-/*td.row1 > div a[id^="tid-link-"] {
+table.ipbtable td.row1 > div > span > a[id^="tid-link-"] {
    text-decoration: none;
 }
-*/
+
+/* topic subtitle */
+table.ipbtable td.row1 > div > div.desc > span[id^="tid-desc-"] {
+   color: #888;
+}
 
 script ~ br { 
    display: none;
